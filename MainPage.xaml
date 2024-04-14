@@ -1,0 +1,22 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.MainPage">
+
+    <StackLayout Padding="20">
+
+        <Label Text="Saved Hikes" FontSize="24" HorizontalOptions="Center" Margin="0,10"/>
+
+        <ListView x:Name="hikeListView" Margin="0,10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Location}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Add New Hike" BackgroundColor="#2196F3" TextColor="White" Margin="0,20"
+                Clicked="AddNewHikeButton_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
