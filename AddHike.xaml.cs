@@ -13,6 +13,7 @@ namespace MauiApp4
         public AddHikePage()
         {
             InitializeComponent();
+            hikeDatabase = new HikeDatabase(Path.Combine(FileSystem.AppDataDirectory, "hike.db"));
         }
 
         private async void SubmitButton_Clicked(object sender, EventArgs e)
