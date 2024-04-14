@@ -52,6 +52,8 @@ namespace MauiApp4
             lengthEntry.Text = string.Empty;
             difficultyEntry.Text = string.Empty;
             descriptionEditor.Text = string.Empty;
+
+            _ = Navigation.PopAsync();
         }
     }
 }
